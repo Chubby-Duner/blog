@@ -9,24 +9,20 @@ module.exports = [
       {
         text: '前端文章',
         items: [
-          { text: 'JavaScript', link: '/pages/67e8a9/' },
-          { text: 'Vue', link: '/pages/5d463fbdb172d43b/' },
-          { text: 'ES6', link: '/pages/08c1d7/' }
+          { text: '《JavaScript文章》', link: '/pages/67e8a9/' },
+          { text: '《Vue》', link: '/pages/5d463fbdb172d43b/' },
+          { text: '《ES6》', link: '/pages/08c1d7/' },
+          { text: '《Git》', link: '/pages/4003da/'},
         ],
       },
-      {
-        text: '学习笔记',
-        items: [
-          { text: '《JavaScript教程》笔记', link: '/note/javascript/' },
-          { text: '《ES6 教程》笔记', link: '/pages/08c1d7/' },
-          { text: '《Vue》笔记', link: '/note/vue/' },
-          { text: '《React》笔记', link: '/note/react/' },
-          {
-            text: '《Git》学习笔记',
-            link: '/note/git/',
-          },
-        ],
-      },
+    ],
+  },
+  {
+    text: '框架',
+    link: '/frame/',
+    items: [
+      { text: '《Vue》', link: '/note/vue/' },
+      { text: '《React》', link: '/note/react/' },
     ],
   },
   {
