@@ -10,7 +10,7 @@ module.exports = [
         text: '前端文章',
         items: [
           { text: '《JavaScript文章》', link: '/pages/67e8a9/' },
-          { text: '《Vue》', link: '/pages/5d463fbdb172d43b/' },
+          { text: '《Vue》', link: '/pages/bcf114/' },
           { text: '《ES6》', link: '/pages/08c1d7/' },
           { text: '《Git》', link: '/pages/4003da/'},
         ],
