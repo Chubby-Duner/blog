@@ -28,7 +28,7 @@ module.exports = {
       font-weight: bold;
       margin: 0 0 8px 0;
     ">公众号</p>
-    <img src="https://cdn.jsdelivr.net/gh/zchaoGe/image-hosting@master/blog/微信公众号.png"  style="width:100%;" />
+    <img src="https://cdn.jsdelivr.net/gh/zchaoGe/image-hosting@master/blog/logo.png"  style="width:100%;" />
     <p>
       学习与分享前端知识，一起学习，一起成长叭。    
     </p>
