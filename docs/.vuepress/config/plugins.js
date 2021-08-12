@@ -1,10 +1,10 @@
 // 插件配置
 module.exports = [
   // 本地插件
-  [require('../plugins/love-me'), { // 鼠标点击爱心特效
-    color: '#5874DC', // 爱心颜色，默认随机色
-    excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
-  }],
+  // [require('../plugins/love-me'), { // 鼠标点击爱心特效
+  //   color: '#5874DC', // 爱心颜色，默认随机色
+  //   excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
+  // }],
 
   'vuepress-plugin-baidu-autopush', // 百度自动推送
 
@@ -106,5 +106,14 @@ module.exports = [
         return dayjs(timestamp).format('YYYY/MM/DD, HH:mm:ss')
       },
     },
+  ],
+  [
+    //鼠标点击特效 先安装在配置， npm install vuepress-plugin-cursor-effects --save
+    "cursor-effects",
+    {
+      size: 3,                    // size of the particle, default: 2
+      shape: ['circle'],  // shape of the particle, default: 'star'
+      zIndex: 999999999           // z-index property of the canvas, default: 999999999
+    }
   ],
 ]
