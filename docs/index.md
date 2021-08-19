@@ -13,7 +13,7 @@ features: # 可选的
     link: /web/ # 可选
     imgUrl: /img/web.png # 可选
   - title: 页面
-    details: html(5)/css(3)，前端页面相关
+    details: html(5)/css(3)/UI库，前端页面相关
     link: /ui/
     imgUrl: /img/html.png
   - title: 技术
