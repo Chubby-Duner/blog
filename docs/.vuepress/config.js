@@ -8,7 +8,7 @@ module.exports = {
   theme: 'vdoing', // 使用npm包主题
   // theme: require.resolve('../../theme-vdoing'), // 使用本地主题
 
-  title: "Amery's blog",
+  title: "性感de小肥猫",
   description: 'web前端技术博客,简洁至上,专注web前端学习与总结。JavaScript,js,ES6,vue,css3,html5,git,github等技术文章。',
   markdown: {
     lineNumbers: true, // 代码行号
