@@ -22,3 +22,5 @@ npm run build
 [MIT](https://github.com/zchaoGe/blog/blob/master/LICENSE)
 
 Copyright (c) 2021-present Amerys
+
+test
