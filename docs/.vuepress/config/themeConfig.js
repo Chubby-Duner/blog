@@ -7,7 +7,7 @@ module.exports = {
   nav,
   sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
   logo: '/img/logo.png', // 导航栏logo
-  repo: 'https://github.com/zchaoGe/blog.git', // 导航栏右侧生成Github链接
+  repo: 'https://github.com/chubby-duner/blog.git', // 导航栏右侧生成Github链接
   searchMaxSuggestions: 10, // 搜索结果显示最大数
   lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
   docsDir: 'docs', // 编辑的文件夹
@@ -21,11 +21,11 @@ module.exports = {
   // archive: false, // 是否打开归档功能，默认true。 如打开，会做的事情有：1.自动生成归档页面（在@pages文件夹）。如关闭，则反之。
   // categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
 
-  bodyBgImg: 'https://cdn.jsdelivr.net/gh/zchaoGe/image-hosting@master/blog/pc.png',
+  bodyBgImg: 'https://cdn.jsdelivr.net/gh/Chubby-Duner/image-hosting@master/blog/pc.png',
  
   // bodyBgImg: [
-  //   'https://cdn.jsdelivr.net/gh/zchaoGe/image-hosting@master/blog/pc.png',
-  //   'https://cdn.jsdelivr.net/gh/zchaoGe/image-hosting@master/blog/cat.png',
+  //   'https://cdn.jsdelivr.net/gh/Chubby-Duner/image-hosting@master/blog/pc.png',
+  //   'https://cdn.jsdelivr.net/gh/Chubby-Duner/image-hosting@master/blog/cat.png',
   // ], // body背景大图，默认无。 单张图片 String || 多张图片 Array, 多张图片时每隔15秒换一张。
   bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0 ~ 1.0, 默认0.5
 
@@ -49,11 +49,11 @@ module.exports = {
   author: {
     // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, link: String}
     name: '性感de小肥猫', // 必需
-    link: 'https://github.com/zchaoGe', // 可选的
+    link: 'https://github.com/Chubby-Duner', // 可选的
   },
   blogger: {
     // 博主信息，显示在首页侧边栏
-    avatar: 'https://cdn.jsdelivr.net/gh/zchaoGe/image-hosting@master/blog/eat.png',
+    avatar: 'https://cdn.jsdelivr.net/gh/Chubby-Duner/image-hosting@master/blog/eat.png',
     name: '性感de小肥猫',
     slogan: 'Better later than never.',
   },
@@ -69,7 +69,7 @@ module.exports = {
       {
         iconClass: 'icon-github',
         title: 'GitHub',
-        link: 'https://github.com/zchaoGe',
+        link: 'https://github.com/Chubby-Duner',
       },
       {
         iconClass: 'icon-juejin',
@@ -82,7 +82,7 @@ module.exports = {
     // 页脚信息
     createYear: 2021, // 博客创建年份
     copyrightInfo:
-      '性感de小肥猫 | <a href="https://github.com/zchaoGe/blog/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
+      '性感de小肥猫 | <a href="https://github.com/Chubby-Duner/blog/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
   },
   htmlModules // 插入hmtl(广告)模块
 }

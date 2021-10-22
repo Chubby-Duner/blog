@@ -1,7 +1,7 @@
 # 基于vuepress-theme-vdoing搭建的博客系统
 
 <p>
-    <a href="https://github.com/zchaoGe/blog/blob/master/LICENSE"><img src="https://img.shields.io/github/license/zchaoge/blog
+    <a href="https://github.com/Chubby-Duner/blog/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Chubby-Duner/blog
 " alt="License"></a>
     <a href="https://www.npmjs.com/package/vuepress-theme-vdoing"><img alt="npm" src="https://img.shields.io/npm/v/vuepress-theme-vdoing"></a>
 </p>
@@ -19,8 +19,6 @@ npm run build
 ```
 
 ## 许可证
-[MIT](https://github.com/zchaoGe/blog/blob/master/LICENSE)
+[MIT](https://github.com/Chubby-Duner/blog/blob/master/LICENSE)
 
 Copyright (c) 2021-present Amerys
-
-test
