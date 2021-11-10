@@ -1,7 +1,7 @@
 ---
 home: true
 # heroImage: /img/web.png
-heroText: 性感de小肥猫
+heroText: 小胖墩er
 tagline: 迟到总比不到的好，致敬每个学习路上的你。
 # actionText: 立刻进入 →
 # actionLink: /web/
