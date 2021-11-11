@@ -116,4 +116,12 @@ module.exports = [
       zIndex: 999999999           // z-index property of the canvas, default: 999999999
     }
   ],
+  [
+    "@mr-hope/comment",{
+      Waline: {
+        type: 'waline',
+        serverURL: "https://waline-2f80zo1kv-amerys.vercel.app",
+      }
+    }
+  ]
 ]

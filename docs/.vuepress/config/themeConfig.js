@@ -84,5 +84,9 @@ module.exports = {
     copyrightInfo:
       '小胖墩er | <a href="https://github.com/Chubby-Duner/blog/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
   },
+  comment: {
+    type: 'waline',
+    serverURL: "https://waline-2f80zo1kv-amerys.vercel.app"
+  },
   htmlModules // 插入hmtl(广告)模块
 }
