@@ -97,14 +97,14 @@ export default {
       overflow-y auto
       transition all 0.2s
       &::-webkit-scrollbar-track-piece
-        background-color rgba(0, 0, 0, 0.05)
+        background-color rgba(123, 126, 192, 0.05)
       &::-webkit-scrollbar-thumb:vertical
-        background-color rgba(0, 0, 0, 0.15)
+        background-color rgba(123, 126, 192, 0.15)
       &:hover
         &::-webkit-scrollbar-track-piece
-          background-color rgba(0, 0, 0, 0.1)
+          background-color rgba(123, 126, 192, 0.1)
         &::-webkit-scrollbar-thumb:vertical
-          background-color rgba(0, 0, 0, 0.25)
+          background-color rgba(123, 126, 192, 0.25)
 .tags-page
   .main-left
     .tags-wrapper

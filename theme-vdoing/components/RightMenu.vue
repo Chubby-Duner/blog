@@ -60,7 +60,7 @@ export default {
     &::-webkit-scrollbar-track-piece
       background none
     &::-webkit-scrollbar-thumb:vertical
-      background-color hsla(0, 0%, 49%, 0.3)
+      background-color var(--textLightenColor)
     &:hover
       overflow-y auto
     .right-menu-item
