@@ -85,9 +85,9 @@ module.exports = {
   },
   footer: {
     // 页脚信息
-    createYear: 2020, // 博客创建年份
+    createYear: 2021, // 博客创建年份
     copyrightInfo:
-      '小胖墩er | <a href="https://github.com/Chubby-Duner/blog/blob/master/LICENSE" target="_blank">MIT License</a> <br/> <font style="color: #666"> <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">xxx</a> </font>', // 博客版权信息，支持a标签
+      '小胖墩er | <a href="https://github.com/Chubby-Duner/blog/blob/master/LICENSE" target="_blank">MIT License</a> <br/> <font style="color: #666"> <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">xxx备案号</a> </font>', // 博客版权信息，支持a标签
   },
   comment: {
     type: 'waline',

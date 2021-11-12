@@ -26,18 +26,51 @@
       <span
         v-html="footer.copyrightInfo"
       ></span>
+      <br>
+      <span>{{ runtimeText }}</span>
     </template>
   </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      runtimeText: '',
+      timer: null
+    }
+  },
   computed: {
     social () {
       return this.$themeConfig.social
     },
     footer () {
       return this.$themeConfig.footer
+    }
+  },
+  mounted() {
+    this.timer = setInterval(this.runtime, 1000)
+  },
+  methods: {
+    runtime() {
+      // 初始化时间，日/月/年 时:分:秒
+      const X = new Date("08/09/2021 16:00:00")
+      const Y = new Date()
+      const T = (Y.getTime() - X.getTime())
+      const M = 24*60*60*1000
+      const a = T/M
+      const A = Math.floor(a)
+      const b = (a - A) * 24
+      const B = Math.floor(b)
+      const c = (b - B) * 60
+      const C = Math.floor((b - B) * 60)
+      const D = Math.floor((c - C) * 60)
+      this.runtimeText = `本站已存活了${A}天${B}小时${C}分${D}秒`
+    }
+  },
+  beforeDestroy() {
+    if (this.timer) {
+      clearInterval(this.timer)
     }
   }
 }
