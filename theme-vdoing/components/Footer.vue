@@ -49,6 +49,10 @@ export default {
     }
   },
   mounted() {
+    // 先清除再重新开启，避免定时器叠加的bug
+    clearInterval(this.timer)
+    this.timer = null
+
     this.timer = setInterval(this.runtime, 1000)
   },
   methods: {
