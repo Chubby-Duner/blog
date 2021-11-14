@@ -6,7 +6,7 @@ const htmlModules = require('./htmlModules.js');
 module.exports = {
   nav,
   sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
-  logo: '/img/new-logo.png', // 导航栏logo
+  logo: '/img/new1/fav.png', // 导航栏logo
   repo: 'https://github.com/chubby-duner/blog.git', // 导航栏右侧生成Github链接
   searchMaxSuggestions: 10, // 搜索结果显示最大数
   lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
@@ -58,7 +58,7 @@ module.exports = {
   },
   blogger: {
     // 博主信息，显示在首页侧边栏
-    avatar: 'https://cdn.jsdelivr.net/gh/Chubby-Duner/image-hosting@master/blog/new-logo.png',
+    avatar: '/img/new1/logo.jpeg',
     name: '小胖墩er',
     slogan: 'Better later than never.',
   },
@@ -88,10 +88,6 @@ module.exports = {
     createYear: 2021, // 博客创建年份
     copyrightInfo:
       '小胖墩er | <a href="https://github.com/Chubby-Duner/blog/blob/master/LICENSE" target="_blank">MIT License</a> <br/> <font style="color: #666"> <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">xxx备案号</a> </font>', // 博客版权信息，支持a标签
-  },
-  comment: {
-    type: 'waline',
-    serverURL: "https://waline-2f80zo1kv-amerys.vercel.app"
   },
   htmlModules // 插入hmtl(广告)模块
 }

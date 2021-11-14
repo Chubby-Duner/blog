@@ -57,6 +57,7 @@ export default {
 
 <style lang='stylus'>
 .categories-wrapper
+  border-radius 14px !important
   .title
     color var(--textColor)
     opacity 0.9
@@ -88,14 +89,15 @@ export default {
         color $accentColor
         background #f8f8f8
         border-color $accentColor
+        padding-left 1.5rem
         span
           opacity 0.8
       span
         float right
-        background-color var(--textColor)
+        background-color #ff0092
         color var(--mainBg)
-        border-radius 8px
-        padding 0 0.13rem
+        border-radius 5px
+        padding 0.2rem
         min-width 1rem
         height 1rem
         line-height 1rem
@@ -104,7 +106,7 @@ export default {
         opacity 0.6
         transition opacity 0.3s
       &.active
-        background $accentColor
+        background #999
         color var(--mainBg)
         padding-left 0.8rem
         border-radius 1px

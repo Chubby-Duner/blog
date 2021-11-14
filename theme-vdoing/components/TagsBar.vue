@@ -72,6 +72,7 @@ export default {
 <style lang='stylus'>
 .tags-wrapper
   padding 0 .95rem
+  border-radius 14px !important
   .title
     color var(--textColor)
     opacity 0.9

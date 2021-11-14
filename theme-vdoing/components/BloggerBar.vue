@@ -1,7 +1,7 @@
 <template>
   <aside class="blogger-wrapper card-box">
     <div class="avatar">
-      <img :src="blogger.avatar" alt="头像" title="我好看吗" />
+      <img :src="blogger.avatar" alt="小胖墩er" title="小胖墩er" />
     </div>
     <div class="icons" v-if="social && social.icons && social.icons.length">
       <a
@@ -40,6 +40,7 @@ export default {
   display inline-table
   padding-top 0 !important
   overflow hidden
+  border-radius 14px !important
   .avatar
     width 100%
     // height 235px
@@ -67,6 +68,7 @@ export default {
         color $accentColor
   .blogger
     padding 0.3rem 0.95rem 0 0.95rem
+    text-align: center
     .name
       font-size 1.3rem
       display block

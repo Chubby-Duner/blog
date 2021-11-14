@@ -178,6 +178,8 @@ export default {
       font-size 2.5rem
       color $activeColor
       opacity 0.85
+    &:hover
+      transform: scale(1.05)
     .title-wrapper
       a
         color var(--textColor)

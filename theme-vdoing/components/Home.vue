@@ -342,7 +342,7 @@ export default {
     width 100%
     min-height 450px
     margin-top $navbarHeight
-    color $bannerTextColor
+    color #000
     position relative
     overflow hidden
     .banner-conent
@@ -483,6 +483,7 @@ export default {
       .custom-html-box
         padding 0
         overflow hidden
+        border-radius 14px !important
 @keyframes heart
   from
     transform translate(0, 0)
