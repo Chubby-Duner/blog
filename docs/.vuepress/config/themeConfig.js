@@ -58,7 +58,7 @@ module.exports = {
   },
   blogger: {
     // 博主信息，显示在首页侧边栏
-    avatar: '/img/new1/logo.jpeg',
+    avatar: 'https://cdn.jsdelivr.net/gh/Chubby-Duner/image-hosting@master/blog/logo.jpeg',
     name: '小胖墩er',
     slogan: 'Better later than never.',
   },
