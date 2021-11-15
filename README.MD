@@ -6,7 +6,7 @@
     <a href="https://www.npmjs.com/package/vuepress-theme-vdoing"><img alt="npm" src="https://img.shields.io/npm/v/vuepress-theme-vdoing"></a>
 </p>
 
-这是一个兼具博客文章、知识管理、文档查找的个人网站，主要内容是Web前端技术。学习与分享前端知识，一起学习，一起成长叭。
+当前博客是基于[vuepress-theme-vdoing](https://github.com/xugaoyi/vuepress-theme-vdoing)上进行的一个更改，是一个兼具博客文章、知识管理、文档查找的个人网站，主要内容是Web前端技术。学习与分享前端知识，一起学习，一起成长叭。
 
 ## 本地文档预览
 ```
