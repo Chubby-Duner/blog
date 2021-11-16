@@ -8,7 +8,7 @@
         />
         {{ this.$page.title }}
       </h1>
-      <ul>
+      <!-- <ul>
         <template v-for="(item, index) in postsList">
           <li
             class="year"
@@ -24,7 +24,32 @@
             </router-link>
           </li>
         </template>
-      </ul>
+      </ul> -->
+      <div id="archives-temp">
+        <div id="archives-content">
+          <div class="archives-title" v-for="(item, index) in postsList" :key="index">
+            <div v-if="(year = getYear(index)) !== getYear(index - 1)" style="position: relative" class="year">
+              <span class="calendar-logo">
+                <img src="https://cdn.jsdelivr.net/gh/Chubby-Duner/image-hosting@master/blog/calendar.png" alt="calendar">
+              </span>
+              <h3 class="yearText">{{ year }}</h3>
+            </div>
+            <div class="archives" style="display: block; overflow: hidden">
+              <span class="ar-circle"></span>
+              <div class="arrow-left"></div>
+              <div class="brick">
+                <router-link :to="item.path">
+                  {{ item.title }}
+                  <span class="clock">
+                    <img src="https://cdn.jsdelivr.net/gh/Chubby-Duner/image-hosting@master/blog/clock1.png" alt="clock">
+                    <span class="time">{{ getDate(item) }}</span>
+                  </span>
+                </router-link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -150,4 +175,90 @@ export default {
     .theme-vdoing-wrapper
       li.year
         top 0
+.theme-vdoing-wrapper
+  #archives-temp
+    #archives-content
+      .archives-title
+        &.year
+          position sticky
+          top $navbarHeight
+          background var(--mainBg)
+          z-index 1
+        &.year:not(:first-child)
+          margin-top 3.5rem
+#archives-temp
+  margin-top 50px
+  margin-bottom 100px
+  h3
+    letter-spacing 2px
+    font-style italic
+    font-size 20px
+    font-weight 400
+    color orange
+    margin-left 36px
+    margin-top 50px
+    &:hover
+      color #ddd
+      cursor pointer
+#archives-content 
+  position relative
+  border-left 1px dashed #f5f5f5
+.calendar-logo
+  display inline-block
+  width 40px
+  height 40px
+  position absolute
+  top -7px
+  left -10px
+  img
+    width 100%
+    height 100%
+.archives
+  span.ar-circle
+    height 10px
+    width 10px
+    background orange
+    display inline-block
+    position absolute
+    left -5px
+    margin-top 22px
+    border-radius 100px
+.arrow-left
+  width 0
+  height 0
+  display block
+  float left
+  margin-top 10px
+  border-left 20px solid transparent
+  border-bottom 20px solid #f5f5f5
+  margin-left 11px
+.brick
+  margin-left 30px
+  transition all .4s
+  &:hover
+    .arrow-left
+      box-shadow 0 10px 20px -10px #999
+      transform translateY(-5px)
+      z-index 999
+  a
+    color #7d7d7d
+    padding 20px
+    background #f5f5f5
+    margin-bottom 20px
+    display block
+    letter-spacing 0
+.clock
+  float right
+  position relative
+  width 32px
+  height 32px
+  margin-right 30px
+  margin-top -4px
+.time
+  display inline-block
+  position absolute
+  width 45px
+  top 50%
+  transform translateY(-57%)
+  margin-left 5px
 </style>

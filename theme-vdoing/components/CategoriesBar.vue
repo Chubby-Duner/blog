@@ -94,7 +94,7 @@ export default {
           opacity 0.8
       span
         float right
-        background-color #ff0092
+        background-color #ffa500
         color var(--mainBg)
         border-radius 5px
         padding 0.2rem

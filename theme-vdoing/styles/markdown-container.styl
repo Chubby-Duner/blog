@@ -29,17 +29,23 @@ h1, h2, h3, h4, h5, h6
       width calc(100%/3 - .7rem)
       margin .35rem
       background var(--bodyBg)
-      border-radius 3px
+      border-radius 5px
       color var(--textColor)
       display flex
       box-shadow 1px 1px 2px 0 rgba(0,0,0,.06)
       transition all .4s
+      transition-timing-function cubic-bezier(.88,.13,.25,1)
       &:hover
         text-decoration none
-        box-shadow: 0 10px 20px -10px var(--randomColor, rgba(0,0,0,0.15));
+        box-shadow: 0 10px 20px -10px #ffa500;
         transform: translateY(-3px) scale(1.01, 1.01)
         img
           // transform rotate(8deg) scale(1.1, 1.1)
+          transform: rotate(666turn)
+          transition-delay 0.5s
+          transition-property all
+          transition-duration 59s
+          transition-timing-function cubic-bezier(.34,0,.84,1)
           box-shadow 3px 2px 7px rgba(0, 0, 0, 0.15)
         div p
           text-shadow 3px 2px 5px rgba(0, 0, 0, 0.15)
