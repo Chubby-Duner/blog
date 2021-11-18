@@ -25,7 +25,7 @@
                   {{ item.title }}
                   <span class="clock">
                     <img src="https://cdn.jsdelivr.net/gh/Chubby-Duner/image-hosting@master/blog/clock1.png" alt="clock">
-                    <span class="time">{{ getDate(item) }}</span>
+                    <span class="right-time">{{ getDate(item) }}</span>
                   </span>
                 </router-link>
               </div>
@@ -237,7 +237,7 @@ export default {
   height 32px
   margin-right 30px
   margin-top -4px
-.time
+.right-time
   display inline-block
   position absolute
   width 45px
