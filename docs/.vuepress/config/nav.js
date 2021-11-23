@@ -29,8 +29,8 @@ module.exports = [
     text: '🌐页面',
     link: '/ui/',
     items: [
-      { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
-      { text: 'CSS', link: '/pages/10cbf9/' },
+      { text: 'HTML', link: '/pages/d1b925/' },
+      { text: 'CSS', link: '/pages/75a695/' },
     ],
   },
   {
