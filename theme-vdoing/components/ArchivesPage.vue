@@ -10,24 +10,26 @@
       </h1>
       <div id="archives-temp">
         <div id="archives-content">
-          <div class="archives-title" v-for="(item, index) in postsList" :key="index">
-            <div v-if="(year = getYear(index)) !== getYear(index - 1)" style="position: relative" class="year">
-              <span class="calendar-logo">
-                <img src="https://cdn.jsdelivr.net/gh/Chubby-Duner/image-hosting@master/blog/calendar.png" alt="calendar">
-              </span>
-              <h3 class="yearText">{{ year }}</h3>
-            </div>
-            <div class="archives" style="display: block; overflow: hidden">
-              <span class="ar-circle"></span>
-              <div class="arrow-left"></div>
-              <div class="brick">
-                <router-link :to="item.path">
-                  {{ item.title }}
-                  <span class="clock">
-                    <img src="https://cdn.jsdelivr.net/gh/Chubby-Duner/image-hosting@master/blog/clock1.png" alt="clock">
-                    <span class="right-time">{{ getDate(item) }}</span>
-                  </span>
-                </router-link>
+          <div class="archives-wrapper" ref="archives">
+            <div class="archives-title" v-for="(item, index) in postsList" :key="index">
+              <div v-if="(year = getYear(index)) !== getYear(index - 1)" style="position: relative" class="year" @click="changeContentState">
+                <span class="calendar-logo">
+                  <img src="https://cdn.jsdelivr.net/gh/Chubby-Duner/image-hosting@master/blog/calendar.png" alt="calendar">
+                </span>
+                <h3 class="yearText">{{ year }}</h3>
+              </div>
+              <div class="archives" style="display: block; overflow: hidden">
+                <span class="ar-circle"></span>
+                <div class="arrow-left"></div>
+                <div class="brick">
+                  <router-link :to="item.path">
+                    {{ item.title }}
+                    <span class="clock">
+                      <img src="https://cdn.jsdelivr.net/gh/Chubby-Duner/image-hosting@master/blog/clock1.png" alt="clock">
+                      <span class="right-time">{{ getDate(item) }}</span>
+                    </span>
+                  </router-link>
+                </div>
               </div>
             </div>
           </div>
@@ -97,6 +99,9 @@ export default {
       if (date && type(date) === 'string') {
         return date.split(" ")[0].slice(5, 10)
       }
+    },
+    changeContentState() {
+      const dom = this.$refs.archives
     }
   }
 }
@@ -167,6 +172,8 @@ export default {
           top $navbarHeight
           background var(--mainBg)
           z-index 1
+        &:hover
+          cursor pointer
         &.year:not(:first-child)
           margin-top 3.5rem
 #archives-temp
@@ -182,7 +189,6 @@ export default {
     margin-top 50px
     &:hover
       color #ddd
-      cursor pointer
 #archives-content 
   position relative
   border-left 1px dashed #f5f5f5

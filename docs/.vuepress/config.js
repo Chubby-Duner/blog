@@ -4,7 +4,7 @@ const themeConfig = require('./config/themeConfig.js');
 
 module.exports = {
   // base: '/', // 格式：'/<仓库名>/'， 默认'/'
-  base: '/blog/',
+  // base: '/blog/',
   // theme: 'vdoing', // 使用npm包主题
   theme: require.resolve('../../theme-vdoing'), // 使用本地主题
 
