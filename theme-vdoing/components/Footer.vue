@@ -15,19 +15,22 @@
     </div>
 
     <!--Vdoing主题遵循MIT协议，完全开源且免费。如果您对主题的修改并不大，希望您保留主题的链接。-->
-    Theme by
-    <a
-      href="https://github.com/xugaoyi/vuepress-theme-vdoing"
-      target="_blank"
-      title="本站主题"
-    >Vdoing</a>
-    <template v-if="footer">
-      | Copyright © {{ footer.createYear }}-{{ new Date().getFullYear() }}
-      <span
-        v-html="footer.copyrightInfo"
-      ></span>
-      <br>
-      <span>{{ runtimeText }}</span>
+    <template>
+       <div class="footer-text">
+          <span>🖥️ {{ runtimeText }}</span>
+       </div>
+       <div class="footer-info">
+         <p>
+           © {{ new Date().getFullYear() }} 小胖墩er 💌
+           <a href="https://beian.miit.gov.cn" target="_blank">粤ICP备2021158933号</a>
+           🛀 Theme by 💝
+            <a
+              href="https://github.com/xugaoyi/vuepress-theme-vdoing"
+              target="_blank"
+              title="本站主题"
+            >Vdoing</a>
+         </p>
+       </div>
     </template>
   </div>
 </template>
@@ -69,7 +72,7 @@ export default {
       const c = (b - B) * 60
       const C = Math.floor((b - B) * 60)
       const D = Math.floor((c - C) * 60)
-      this.runtimeText = `本站已存活了${A}天${B}小时${C}分${D}秒`
+      this.runtimeText = `小破站已坚强运行 ${A} 天 ${B} 小时 ${C} 分 ${D} 秒`
     }
   },
   beforeDestroy() {
@@ -85,7 +88,7 @@ export default {
 .footer
   padding 5rem 1.5rem 2.5rem
   text-align center
-  color #666
+  color #b9b9b9
   box-sizing border-box
   font-size 0.85rem
   transition all 0.2s ease
@@ -108,4 +111,9 @@ export default {
 .no-sidebar .footer
   width auto
   padding-left 1.5rem
+.footer-text, .footer-info
+  font-size 13px
+  text-align center
+  color #b9b9b9
+  font-family ''Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif'
 </style>

@@ -83,11 +83,11 @@ module.exports = {
       },
     ],
   },
-  footer: {
-    // 页脚信息
-    createYear: 2021, // 博客创建年份
-    copyrightInfo:
-      '小胖墩er | <a href="https://github.com/Chubby-Duner/blog/blob/master/LICENSE" target="_blank">MIT License</a> <br/> <font style="color: #666"> <a href="https://beian.miit.gov.cn" target="_blank">粤ICP备2021158933号</a> </font>', // 博客版权信息，支持a标签
-  },
+  // footer: {
+  //   // 页脚信息
+  //   createYear: 2021, // 博客创建年份
+  //   copyrightInfo:
+  //     '小胖墩er | <a href="https://github.com/Chubby-Duner/blog/blob/master/LICENSE" target="_blank">MIT License</a> <br/> <font style="color: #666"> <a href="https://beian.miit.gov.cn" target="_blank">粤ICP备2021158933号</a> </font>', // 博客版权信息，支持a标签
+  // },
   htmlModules // 插入hmtl(广告)模块
 }
